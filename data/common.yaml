@@ -1,0 +1,7 @@
+---
+profile_hardening::remove_setuid::files:
+  - "/usr/bin/fusermount"
+  - "/usr/bin/ksu"
+  - "/usr/bin/nvidia-modprobe"
+  - "/usr/libexec/Xorg.wrap"
+  - "/usr/sbin/login_duo"
