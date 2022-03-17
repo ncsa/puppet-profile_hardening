@@ -1,5 +1,5 @@
 ---
-profile_hardening::remove_setuid::files:
+profile_hardening::remove_setuid_setgid::files:
   - "/usr/bin/fusermount"
   - "/usr/bin/ksu"
   - "/usr/bin/nvidia-modprobe"

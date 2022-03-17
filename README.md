@@ -42,6 +42,6 @@ N/A
 
 See: [REFERENCE.md](REFERENCE.md)
 
-### class profile_hardening::remove_setuid (
+### class profile_hardening::remove_setuid_setgid (
 -  Array[ String ] $files,
 

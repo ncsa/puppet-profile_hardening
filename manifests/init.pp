@@ -1,11 +1,9 @@
-# @summary A short summary of the purpose of this class
-#
-# A description of what this class does
+# @summary Apply generic sercurity hardening not addressed elsewhere
 #
 # @example
 #   include profile_hardening
 class profile_hardening {
 
-  include ::profile_hardening::remove_setuid
+  include ::profile_hardening::remove_setuid_setgid
 
 }
