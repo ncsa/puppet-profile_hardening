@@ -5,5 +5,6 @@
 class profile_hardening {
 
   include ::profile_hardening::remove_setuid_setgid
+  include ::profile_hardening::sysctl
 
 }

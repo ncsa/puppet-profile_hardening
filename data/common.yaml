@@ -5,3 +5,5 @@ profile_hardening::remove_setuid_setgid::files:
   - "/usr/bin/nvidia-modprobe"
   - "/usr/libexec/Xorg.wrap"
   - "/usr/sbin/login_duo"
+
+profile_hardening::sysctl::settings: []

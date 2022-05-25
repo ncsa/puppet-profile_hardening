@@ -30,12 +30,22 @@ include ::profile_hardening
 
 ## Usage
 
-The goal is that no paramters are required to be set. The default paramters should work for most NCSA deployments out of the box.
+The goal is that no parameters are required to be set. The default parameters should work for most NCSA deployments out of the box.
+
+To set temporary or Ad-hoc sysctl settings related to security, you can follow this Hiera example:
+```yaml
+profile_hardening::sysctl::settings:
+  "kernel.param_to_configure":                # name of the kernel parameter to configure
+    comment: "reference a ticket, CVE, etc."
+    ensure: "present"
+    target: "/etc/sysctl.d/50-filename.conf"  # filename to put the setting in
+    value: <number>                           # value, generally an integer
+```
 
 
 ## Dependencies
 
-N/A
+[herculesteam/augeasproviders_sysctl](https://forge.puppet.com/modules/herculesteam/augeasproviders_sysctl) Puppet module
 
 
 ## Reference

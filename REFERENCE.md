@@ -8,6 +8,7 @@
 
 * [`profile_hardening`](#profile_hardening): Apply generic sercurity hardening not addressed elsewhere
 * [`profile_hardening::remove_setuid_setgid`](#profile_hardeningremove_setuid_setgid): Remove setuid and setgid from a list of files
+* [`profile_hardening::sysctl`](#profile_hardeningsysctl): Set Ad-hoc sysctl settings
 
 ## Classes
 
@@ -46,4 +47,28 @@ The following parameters are available in the `profile_hardening::remove_setuid_
 Data type: `Array[String]`
 
 List of files (with full path) that need setuid and setgid removed from them
+
+### <a name="profile_hardeningsysctl"></a>`profile_hardening::sysctl`
+
+Set Ad-hoc sysctl settings
+
+#### Examples
+
+##### 
+
+```puppet
+include profile_hardening::sysctl
+```
+
+#### Parameters
+
+The following parameters are available in the `profile_hardening::sysctl` class:
+
+* [`settings`](#settings)
+
+##### <a name="settings"></a>`settings`
+
+Data type: `Hash`
+
+Raw settings for sysctl resources.
 
