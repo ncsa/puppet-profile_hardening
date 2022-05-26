@@ -7,3 +7,5 @@ profile_hardening::remove_setuid_setgid::files:
   - "/usr/sbin/login_duo"
 
 profile_hardening::sysctl::settings: {}
+
+profile_hardening::xinetd::disable_xinetd_when_unused: true

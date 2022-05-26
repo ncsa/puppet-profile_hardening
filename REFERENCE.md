@@ -9,6 +9,7 @@
 * [`profile_hardening`](#profile_hardening): Apply generic sercurity hardening not addressed elsewhere
 * [`profile_hardening::remove_setuid_setgid`](#profile_hardeningremove_setuid_setgid): Remove setuid and setgid from a list of files
 * [`profile_hardening::sysctl`](#profile_hardeningsysctl): Set Ad-hoc sysctl settings
+* [`profile_hardening::xinetd`](#profile_hardeningxinetd): Configure xinetd
 
 ## Classes
 
@@ -71,4 +72,28 @@ The following parameters are available in the `profile_hardening::sysctl` class:
 Data type: `Hash`
 
 Raw settings for sysctl resources.
+
+### <a name="profile_hardeningxinetd"></a>`profile_hardening::xinetd`
+
+Configure xinetd
+
+#### Examples
+
+##### 
+
+```puppet
+include profile_hardening::xinetd
+```
+
+#### Parameters
+
+The following parameters are available in the `profile_hardening::xinetd` class:
+
+* [`disable_xinetd_when_unused`](#disable_xinetd_when_unused)
+
+##### <a name="disable_xinetd_when_unused"></a>`disable_xinetd_when_unused`
+
+Data type: `Boolean`
+
+Disables xinetd if there are no services enabled under /etc/xinetd.d
 
