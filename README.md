@@ -19,6 +19,10 @@ NCSA Common Puppet Profiles - configure miscellaneous security hardening
 
 This puppet profile applies some generic sercurity hardening that isn't addressed in other NCSA shared Puppet profiles.
 
+Features of this module include
+* Remove setuid and setgid from a list of files (configured via hiera)
+* Set Ad-hoc sysctl settings (configured via hiera)
+* Disable xinetd service if there are no xinetd services enabled
 
 ## Setup
 
