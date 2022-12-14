@@ -1,6 +1,7 @@
 ---
 profile_hardening::remove_setuid_setgid::files:
   - "/usr/bin/fusermount"
+  - "/usr/bin/fusermount3"
   - "/usr/bin/ksu"
   - "/usr/bin/nvidia-modprobe"
   - "/usr/libexec/Xorg.wrap"
