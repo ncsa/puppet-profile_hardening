@@ -1,4 +1,10 @@
 ---
+lookup_options:
+  profile_hardening::remove_setuid_setgid::files:
+    merge:
+      strategy: "deep"
+      knockout_prefix: "--"
+
 profile_hardening::remove_setuid_setgid::files:
   - "/usr/bin/fusermount"
   - "/usr/bin/fusermount3"
