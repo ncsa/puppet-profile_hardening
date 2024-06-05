@@ -12,12 +12,9 @@ class profile_hardening::sysctl (
   Hash $settings,
 
 ) {
-
-  $settings.each | $name, $params |
-  {
+  $settings.each | $name, $params | {
     sysctl { $name:
       * => $params,
     }
   }
-
 }

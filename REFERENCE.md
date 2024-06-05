@@ -7,9 +7,9 @@
 ### Classes
 
 * [`profile_hardening`](#profile_hardening): Apply generic sercurity hardening not addressed elsewhere
-* [`profile_hardening::remove_setuid_setgid`](#profile_hardeningremove_setuid_setgid): Remove setuid and setgid from a list of files
-* [`profile_hardening::sysctl`](#profile_hardeningsysctl): Set Ad-hoc sysctl settings
-* [`profile_hardening::xinetd`](#profile_hardeningxinetd): Configure xinetd
+* [`profile_hardening::remove_setuid_setgid`](#profile_hardening--remove_setuid_setgid): Remove setuid and setgid from a list of files
+* [`profile_hardening::sysctl`](#profile_hardening--sysctl): Set Ad-hoc sysctl settings
+* [`profile_hardening::xinetd`](#profile_hardening--xinetd): Configure xinetd
 
 ## Classes
 
@@ -25,7 +25,7 @@ Apply generic sercurity hardening not addressed elsewhere
 include profile_hardening
 ```
 
-### <a name="profile_hardeningremove_setuid_setgid"></a>`profile_hardening::remove_setuid_setgid`
+### <a name="profile_hardening--remove_setuid_setgid"></a>`profile_hardening::remove_setuid_setgid`
 
 Remove setuid and setgid from a list of files
 
@@ -41,15 +41,15 @@ include profile_hardening::remove_setuid_setgid
 
 The following parameters are available in the `profile_hardening::remove_setuid_setgid` class:
 
-* [`files`](#files)
+* [`files`](#-profile_hardening--remove_setuid_setgid--files)
 
-##### <a name="files"></a>`files`
+##### <a name="-profile_hardening--remove_setuid_setgid--files"></a>`files`
 
 Data type: `Array[String]`
 
 List of files (with full path) that need setuid and setgid removed from them
 
-### <a name="profile_hardeningsysctl"></a>`profile_hardening::sysctl`
+### <a name="profile_hardening--sysctl"></a>`profile_hardening::sysctl`
 
 Set Ad-hoc sysctl settings
 
@@ -65,15 +65,15 @@ include profile_hardening::sysctl
 
 The following parameters are available in the `profile_hardening::sysctl` class:
 
-* [`settings`](#settings)
+* [`settings`](#-profile_hardening--sysctl--settings)
 
-##### <a name="settings"></a>`settings`
+##### <a name="-profile_hardening--sysctl--settings"></a>`settings`
 
 Data type: `Hash`
 
 Raw settings for sysctl resources.
 
-### <a name="profile_hardeningxinetd"></a>`profile_hardening::xinetd`
+### <a name="profile_hardening--xinetd"></a>`profile_hardening::xinetd`
 
 Configure xinetd
 
@@ -89,9 +89,9 @@ include profile_hardening::xinetd
 
 The following parameters are available in the `profile_hardening::xinetd` class:
 
-* [`disable_xinetd_when_unused`](#disable_xinetd_when_unused)
+* [`disable_xinetd_when_unused`](#-profile_hardening--xinetd--disable_xinetd_when_unused)
 
-##### <a name="disable_xinetd_when_unused"></a>`disable_xinetd_when_unused`
+##### <a name="-profile_hardening--xinetd--disable_xinetd_when_unused"></a>`disable_xinetd_when_unused`
 
 Data type: `Boolean`
 

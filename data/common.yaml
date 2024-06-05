@@ -8,7 +8,8 @@ lookup_options:
 profile_hardening::remove_setuid_setgid::files:
   - "/usr/bin/fusermount"
   - "/usr/bin/fusermount3"
-  - "/usr/bin/ksu"
+  - "/usr/bin/ksu"          # REDHAT
+  - "/usr/lib/mit/bin/ksu"  # SUSE
   - "/usr/bin/nvidia-modprobe"
   - "/usr/libexec/Xorg.wrap"
   - "/usr/sbin/login_duo"

@@ -7,7 +7,7 @@
 #   include profile_hardening::xinetd
 class profile_hardening::xinetd (
   Boolean $disable_xinetd_when_unused,
-){
+) {
   if ( $disable_xinetd_when_unused ) {
     exec { 'disable_xinetd':
       path    => ['/bin', '/usr/bin'],
