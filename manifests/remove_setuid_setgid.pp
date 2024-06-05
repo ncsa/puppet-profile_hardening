@@ -8,7 +8,6 @@
 class profile_hardening::remove_setuid_setgid (
   Array[String] $files,
 ) {
-
   # CANNOT USE File RESOURCE BECAUSE SOME FILES MAY NOT ACTUALLY EXIST
 
   # Remove setuid/setgid from key files
@@ -20,5 +19,4 @@ class profile_hardening::remove_setuid_setgid (
       onlyif  => "test `find ${file} -perm -4000 -o -perm -2000 | wc -l` -gt 0",
     }
   }
-
 }
